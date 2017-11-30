@@ -2,7 +2,8 @@ const router = (module.exports = require("express").Router());
 var knex = require("../knex");
 const twilio = require('twilio');
 const client = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN).lookups.v1;
-
+var ngrok = require('ngrok');
+ngrok.connect(function (err, url) {});
 
 
 // Get all employees
@@ -34,9 +35,9 @@ router.post('/', function (req, res) {
         .then( (dat) => {
             if (dat[0] == undefined) {
               client.messages.create({
-                  to: "+15558675309",
+                  to: "+18478140847",
                   from: "+15017250604",
-                  body: "This is the ship that made the Kessel Run in fourteen parsecs?",
+                  body: "LINK",
               }, function(err, message) {
                   console.log("Helllloooo");
               });

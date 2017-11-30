@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
   table.text('lName');
   table.text('phone');
   table.text('password');
-  table.text('verifyCode');
+  table.text('link');
   table.boolean('active');
 });
 };

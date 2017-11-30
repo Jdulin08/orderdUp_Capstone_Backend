@@ -3,6 +3,7 @@ exports.up = function(knex, Promise) {
   table.increments('id');
   table.text('qText');
   table.text('type');
+  table.text('category');
   table.text('ansDetail');
 });
 };
