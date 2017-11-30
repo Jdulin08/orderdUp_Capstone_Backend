@@ -1,9 +1,9 @@
 const router = (module.exports = require("express").Router());
 var knex = require("../knex");
-const twilio = require('twilio');
-const client = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN).lookups.v1;
-var ngrok = require('ngrok');
-ngrok.connect(function (err, url) {});
+// const twilio = require('twilio');
+// const client = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN).lookups.v1;
+// var ngrok = require('ngrok');
+// ngrok.connect(function (err, url) {});
 
 
 // Get all employees

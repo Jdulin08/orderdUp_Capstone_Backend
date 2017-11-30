@@ -12,8 +12,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(morgan('dev'))
 app.use(cors({origin: true}))
 
-// app.use('/messages', require('./routes/messages'));
-// app.use('/conversations', require('./routes/conversations'))
+app.use('/users', require('./routes/employee.js'));
+app.use('/questions', require('./routes/questions.js'));
+
 
 app.use(notFound)
 app.use(errorHandler)
