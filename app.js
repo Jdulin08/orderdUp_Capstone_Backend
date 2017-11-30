@@ -16,7 +16,6 @@ app.use('/users', require('./routes/employee.js'));
 app.use('/managers', require('./routes/restaurant.js'));
 app.use('/questions', require('./routes/questions.js'));
 
-
 app.use(notFound)
 app.use(errorHandler)
 

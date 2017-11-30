@@ -6,17 +6,17 @@ exports.seed = function(knex, Promise) {
       return knex('employee').insert([
         {fName: "Jason",
         lName: "Dulin",
-        phone: "+18478140847",
+        phone: "8478140847",
         password: "Awesome1"
         },
         {fName: "Bryant",
         lName: "Dulin",
-        phone: "+19703195045",
+        phone: "9703195045",
         password: "Awesome2"
         },
         {fName: "Alexa",
         lName: "Perez",
-        phone: "+17203235635",
+        phone: "7203235635",
         password: "Awesome3"
         },
       ]);
