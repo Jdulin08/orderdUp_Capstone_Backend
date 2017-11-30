@@ -18,7 +18,7 @@ router.get("/", function(req, res) {
 // Get message by id
 router.get('/:id', function (req, res) {
   let employeeId = req.params.id
-  knex.select("id", "fName", "lName", "phone")
+  knex.select("fName", "lName", "phone")
     .from('employee')
     .where('id', employeeId)
     .then( function (data) {

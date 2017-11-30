@@ -3,7 +3,7 @@ var knex = require("../knex");
 
 // Get all messages
 router.get("/", function(req, res) {
-  knex.select("id", "qText", "type", "ansDetail")
+  knex.select("id", "qText", "type", "category", "ansDetail")
     .from("question")
     .then(data => {
       res.json(data);
@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
 // Get message by id
 router.get('/:id', function (req, res) {
   let questionId = req.params.id
-  knex.select("qText", "type", "ansDetail")
+  knex.select("qText", "type", "category", "ansDetail")
     .from("question")
     .where('id', questionId)
     .then( function (data) {
