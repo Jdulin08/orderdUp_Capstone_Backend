@@ -4,18 +4,18 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('restaurant').insert([
-        {fname: "Bob",
-        lname: "H",
+        {fName: "Bob",
+        lName: "H",
         email: "bob@gmail.com",
         password: "Awesome4"
         },
-        {fname: "Joe",
-        lname: "L",
+        {fName: "Joe",
+        lName: "L",
         email: "joel@gmail.com",
         password: "Awesome5"
         },
-        {fname: "Nick",
-        lname: "P",
+        {fName: "Nick",
+        lName: "P",
         email: "np@gmail.com",
         password: "Awesome6"
         },

@@ -13,6 +13,7 @@ app.use(morgan('dev'))
 app.use(cors({origin: true}))
 
 app.use('/users', require('./routes/employee.js'));
+app.use('/managers', require('./routes/restaurant.js'));
 app.use('/questions', require('./routes/questions.js'));
 
 

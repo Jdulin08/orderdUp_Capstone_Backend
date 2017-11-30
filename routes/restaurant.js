@@ -28,11 +28,8 @@ router.post('/', function (req, res) {
     knex.select('email')
         .from('restaurant')
         .where('phone', row.email)
-        .then( (dat) => {
-            if (dat[0] == undefined) {
-            var bcrypt = require('bcrypt')
-            const saltRounds = 10
-            const prepass = row.password
+        .then( (data) => {
+          res.json(data)
         })
 })
 
