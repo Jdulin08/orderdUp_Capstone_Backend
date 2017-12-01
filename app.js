@@ -5,7 +5,7 @@ const morgan      = require('morgan')
 const cors        = require('cors')
 const app         = module.exports = express()
 const server      = http.createServer(app)
-const port        = parseInt(process.env.PORT || 3000)
+const port        = parseInt(process.env.PORT || 4000)
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))

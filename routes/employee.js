@@ -30,6 +30,7 @@ function getLink({protocol, host, body}) {
 
 // Create a new employee
 router.post("/", function (req, res) {
+console.log('req.body', req.body)
   employee.create(req.body)
   .then(data => {
     if(data && req.body.phone) {
