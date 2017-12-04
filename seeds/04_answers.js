@@ -11,11 +11,7 @@ exports.seed = function(knex, Promise) {
         {questionId: "2",
         parentId: "2",
         aText: ""
-        },
-        {questionId: "3",
-        parentId: "3",
-        aText: ""
-        },
+        }
       ]);
     });
 };

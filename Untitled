@@ -1,0 +1,11 @@
+curl 'http://localhost:4000/users' \
+-H 'Origin: http://localhost:3000' \
+-H 'Accept-Encoding: gzip, deflate, br' \
+-H 'Accept-Language: en-US,en;q=0.9,la;q=0.8' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' \
+-H 'Content-type: application/javascript' \
+-H 'Accept: application/javascript' \
+-H 'Referer: http://localhost:3000/registration' \
+-H 'Connection: keep-alive' \
+--data-binary '{"phone":"8478140847"}' \
+--compressed
