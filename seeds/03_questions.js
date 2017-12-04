@@ -14,6 +14,11 @@ exports.seed = function(knex, Promise) {
         category: "Wage & Schedule",
         ansDetail: "Dropdown"
         },
+        {qText: "What is your desired salary per year?",
+        type: "Employee",
+        category: "Wage & Schedule",
+        ansDetail: "Dropdown"
+        },
         {qText: "Wage type offered?",
         type: "Employer",
         category: "Wage & Schedule",
@@ -24,7 +29,11 @@ exports.seed = function(knex, Promise) {
         category: "Wage & Schedule",
         ansDetail: "Dropdown"
         },
-
+        {qText: "Salary per year offered?",
+        type: "Employer",
+        category: "Wage & Schedule",
+        ansDetail: "Dropdown"
+        }
       ]);
     });
 };
