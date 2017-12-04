@@ -5,8 +5,6 @@ exports.up = function(knex, Promise) {
   table.text('lName');
   table.text('phone');
   table.text('password');
-  table.text('link');
-  table.boolean('active');
 });
 };
 
