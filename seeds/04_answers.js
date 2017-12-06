@@ -49,32 +49,32 @@ exports.seed = function(knex, Promise) {
         managerId: "",
         aText: ""
         },
-        {questionId: "4",
+        {questionId: "1",
         employeeId: "",
         managerId: "1",
         aText: ""
         },
-        {questionId: "5",
+        {questionId: "2",
         employeeId: "",
         managerId: "1",
         aText: ""
         },
-        {questionId: "6",
+        {questionId: "3",
         employeeId: "",
         managerId: "1",
         aText: ""
         },
-        {questionId: "4",
+        {questionId: "1",
         employeeId: "",
         managerId: "2",
         aText: ""
         },
-        {questionId: "5",
+        {questionId: "2",
         employeeId: "",
         managerId: "2",
         aText: ""
         },
-        {questionId: "6",
+        {questionId: "3",
         employeeId: "",
         managerId: "2",
         aText: ""
