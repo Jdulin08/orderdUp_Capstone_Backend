@@ -10,7 +10,37 @@ exports.seed = function(knex, Promise) {
         aText: ""
         },
         {questionId: "2",
+        employeeId: "1",
+        managerId: "",
+        aText: ""
+        },
+        {questionId: "3",
+        employeeId: "1",
+        managerId: "",
+        aText: ""
+        },
+        {questionId: "1",
         employeeId: "2",
+        managerId: "",
+        aText: ""
+        },
+        {questionId: "2",
+        employeeId: "2",
+        managerId: "",
+        aText: ""
+        },
+        {questionId: "3",
+        employeeId: "2",
+        managerId: "",
+        aText: ""
+        },
+        {questionId: "1",
+        employeeId: "3",
+        managerId: "",
+        aText: ""
+        },
+        {questionId: "2",
+        employeeId: "3",
         managerId: "",
         aText: ""
         },
@@ -26,12 +56,27 @@ exports.seed = function(knex, Promise) {
         },
         {questionId: "5",
         employeeId: "",
+        managerId: "1",
+        aText: ""
+        },
+        {questionId: "6",
+        employeeId: "",
+        managerId: "1",
+        aText: ""
+        },
+        {questionId: "4",
+        employeeId: "",
+        managerId: "2",
+        aText: ""
+        },
+        {questionId: "5",
+        employeeId: "",
         managerId: "2",
         aText: ""
         },
         {questionId: "6",
         employeeId: "",
-        managerId: "3",
+        managerId: "2",
         aText: ""
         }
       ]);

@@ -25,17 +25,6 @@ exports.seed = function(knex, Promise) {
         zip: "80203",
         lat: "40.111688665595956",
         long: "-99.052734375"
-        },
-        {fName: "Hason",
-        lName: "Doolon",
-        email: "hd@gmail.com",
-        password: "Awesome6",
-        address: "1085 N Broadway",
-        city: "Denver",
-        state: "Colorado",
-        zip: "80203",
-        lat: "39.733481",
-        long: "-104.987828"
         }
       ]);
     });
