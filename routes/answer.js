@@ -26,7 +26,12 @@ router.get('/:id', function(req, res) {
 
 // Create a new answer
 router.post('/', function (req, res) {
-answer.create(req.body)
+  const answers = [
+    {questionId:1, aText:req.body.wageType},
+    {questionId:2, aText:req.body.wageHourly},
+    {questionId:3, aText:req.body.wageYearly}
+  ]
+answer.create(answers)
   .then(data => res.json(data))
   .catch(err => res.status(500).send({error: err.message, stack: err.stack}))
 })
