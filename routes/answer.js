@@ -3,7 +3,7 @@ const answer = require('../lib/answer')
 const question = require('../lib/question')
 const port = parseInt(process.env.PORT || 3000)
 
-// Get all employees
+// Get all answers
 router.get("/", function(req, res) {
   // return res.send({ host: req.host, protocol: req.protocol, ip: req.ip })
   answer.getAll()
@@ -14,7 +14,7 @@ router.get("/", function(req, res) {
     }))
 });
 
-// Get message by id
+// Get answer by id
 router.get('/:id', function(req, res) {
   answer.getOne(req.params)
     .then(data => res.json(data))
@@ -30,7 +30,6 @@ answer.create(req.body)
   .then(data => res.json(data))
   .catch(err => res.status(500).send({error: err.message, stack: err.stack}))
 })
-
 
 //OLD CODE
 
