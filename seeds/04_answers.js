@@ -5,13 +5,20 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('answer').insert([
         {questionId: "1",
-        parentId: "1",
+        employeeId: "1",
+        managerId: "1",
         aText: ""
         },
         {questionId: "2",
-        parentId: "2",
+        employeeId: "2",
+        managerId: "2",
         aText: ""
-        }
+        },
+        {questionId: "3",
+        employeeId: "3",
+        managerId: "3",
+        aText: ""
+        },
       ]);
     });
 };
