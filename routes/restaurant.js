@@ -20,9 +20,9 @@ router.get('/:id', function (req, res) {
 })
 
 // Create a new restaurant
+// return knex('restaurant').where('email', req.body.email)
 router.post('/', function (req, res) {
 restaurant.create(req.body)
-// return knex('restaurant').where('email', req.body.email)
   .then(data => res.json(data))
   .catch(err => res.status(500).send({error: err.message, stack: err.stack}))
 })
