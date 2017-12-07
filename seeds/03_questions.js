@@ -18,21 +18,6 @@ exports.seed = function(knex, Promise) {
         type: "Employee",
         category: "Wage & Schedule",
         ansDetail: "Dropdown"
-        },
-        {qText: "Wage type offered?",
-        type: "Employer",
-        category: "Wage & Schedule",
-        ansDetail: "Dropdown"
-        },
-        {qText: "Wage per hour offered?",
-        type: "Employer",
-        category: "Wage & Schedule",
-        ansDetail: "Dropdown"
-        },
-        {qText: "Salary per year offered?",
-        type: "Employer",
-        category: "Wage & Schedule",
-        ansDetail: "Dropdown"
         }
       ]);
     });
